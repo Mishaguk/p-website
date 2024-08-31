@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <div class="container-fluid navbar-container bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white py-0 px-3">
+          <a
+            href="/"
+            class="navbar-brand d-flex align-items-center text-center mg-4"
+          >
+            <div class="icon m-2 p-2">
+              <img src="images/icon-deal.png" width="30px" height="30px" />
+            </div>
+            <h1>Brand</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Property
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="propertyList.html"
+                      >Property List</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="propertyType.html"
+                      >Property Type</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="propertyAgent.html"
+                      >Property Agent</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">404 Error</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <button class="btn btn-primary px-3 ms-2">Add property</button>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluid header p-0 bg-white">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 mb-4 fadeIn">
+              Find A <span class="primary-text">Perfect Home</span> To Live With
+              Your Family
+            </h1>
+            <p class="mb-4 pb-4 fadeIn">
+              Vero elitr justo clita lorem. Ipsum dolor at sed stetsit diam no.
+              Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
+            </p>
+            <button class="btn btn-primary py-3 px-5 fadeIn">
+              Get Started
+            </button>
+          </div>
+          <div class="col-md-6">
+            <div class="owl-carousel header-carousel fadeIn">
+              <div class="item">
+                <img class="img-fluid" src="./images/carousel-1.jpg" />
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="./images/carousel-2.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid mb-5 fadeIn"
+        style="padding: 35px; background-color: var(--primary)"
+      >
+        <div class="row g-2">
+          <div class="col-md-10">
+            <div class="row g-2">
+              <div class="col-md-4">
+                <input
+                  type="text"
+                  placeholder="Search Keyword"
+                  class="form-control py-3"
+                />
+              </div>
+
+              <div class="col-md-4">
+                <select class="form-select py-3" id="propertySelect1">
+                  <option selected>Property Type</option>
+                  <option value="1">Property Type 1</option>
+                  <option value="2">Property Type 2</option>
+                  <option value="3">Property Type 3</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select class="form-select py-3">
+                  <option selected>Location</option>
+                  <option value="1">Location 1</option>
+                  <option value="2">Location 2</option>
+                  <option value="3">Location 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <button
+              class="btn btn-dark w-100 py-3"
+              style="background-color: var(--dark-blue)"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow animate__animated animate__fadeInUp"
+            style="max-width: 600px"
+          >
+            <h1>Property Types</h1>
+            <p>
+              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
+              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
+              rebum vero dolor duo.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img class="img-fluid" src="./images/icon-apartment.png" />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Appartment
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUpanimate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img class="img-fluid" src="./images/icon-villa.png" />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Villa
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img class="img-fluid" src="./images/icon-house.png" />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Home
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.7s"
+              style="visibility: visible; animation-delay: 0.7s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      class="img-fluid"
+                      src="./images/icon-condominium.png"
+                    />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Office
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+              style="visibility: visible; animation-delay: 0.1s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img class="img-fluid" src="./images/icon-building.png" />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Building
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3"
+              style="visibility: visible; animation-delay: 0.3s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      class="img-fluid"
+                      src="./images/icon-neighborhood.png"
+                    />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Townhouse
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5"
+              style="visibility: visible; animation-delay: 0.5s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img class="img-fluid" src="./images/icon-housing.png" />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Shop
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.7"
+              style="visibility: visible; animation-delay: 0.7s"
+            >
+              <a
+                class="cat-item d-block text-center rounded p-3"
+                style="background-color: #effdf5 !important"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img class="img-fluid" src="./images/icon-luxury.png" />
+                  </div>
+                  <h6
+                    style="
+                      color: var(--dark-blue);
+                      font-weight: 700;
+                      transition: 0.5s;
+                    "
+                  >
+                    Garage
+                  </h6>
+                  <span>123 Properties</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div
+              class="col-lg-6 wow animate__animated animate__fadeIn"
+              data-wow-delay="0.1s"
+            >
+              <div class="about-img position-relative p-5 pe-0 overflow-hidden">
+                <img src="images/about.jpg" class="img-fluid w-100" />
+              </div>
+            </div>
+            <div
+              class="col-lg-6 wow animate__animated animate__fadeIn"
+              data-wow-delay="0.1s"
+            >
+              <h1 class="mb-4">#1 Place To Find The Perfect Property</h1>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+              <p>
+                <i class="fa fa-check primary-text me-3"></i>Tempor erat elitr
+                rebum at clita
+              </p>
+              <p>
+                <i class="fa fa-check primary-text me-3"></i>Aliqu diam amet
+                diam et eos
+              </p>
+              <p>
+                <i class="fa fa-check primary-text me-3"></i>Clita duo justo
+                magna dolore erat amet
+              </p>
+              <button class="btn btn-primary py-3 px-5 mt-3">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-0 gx-5 align-items-end">
+            <div class="col-lg-6">
+              <div
+                class="text-start mb-5 mx-auto wow animate__animated animate__slideInLeft"
+              >
+                <h1 class="mb-3">Property Listing</h1>
+                <p>
+                  Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
+                  dolore lorem kasd vero ipsum sit eirmod sit diam justo sed
+                  rebum.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 text-start text-lg-end wow animate__animated animate__slideInRight"
+            >
+              <ul class="nav nav-pills d-inline-flex mb-5 justify-content-end">
+                <li class="nav-item me-2">
+                  <a
+                    class="btn btn-outline-primary active"
+                    data-bs-toggle="pill"
+                    href="#tab-1"
+                    >Featured</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="pill"
+                    href="#tab-2"
+                    >For Sell</a
+                  >
+                </li>
+                <li class="nav-item me-0">
+                  <a
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="pill"
+                    href="#tab-3"
+                    >For Rent</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane active show fade p-0"></div>
+            <div id="tab-2" class="tab-pane fade p-0"></div>
+            <div id="tab-3" class="tab-pane fade p-0"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="rounded p-3" style="background-color: #effdf5">
+            <div
+              class="rounded bg-white p-4"
+              style="border: 1px dashed rgba(0, 185, 142, 0.3)"
+            >
+              <div class="row g-5 align-items-center">
+                <div
+                  class="col-lg-6 wow animate__animated animate__fadeIn"
+                  data-wow-delay="0.1s"
+                >
+                  <img
+                    src="images/call-to-action.jpg"
+                    class="img-fluid w-100 rounded"
+                  />
+                </div>
+                <div
+                  class="col-lg-6 wow animate__animated animate__fadeIn"
+                  data-wow-delay="0.5s"
+                >
+                  <div class="mb-4">
+                    <h1 class="mb-3">Contact With Our Certified Agent</h1>
+                    <p>
+                      Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem
+                      kasd vero ipsum sit sit diam justo sed vero dolor duo.
+                    </p>
+                  </div>
+                  <button
+                    class="btn btn-primary py-3 px-4 me-2 wow animate__animated animate__bounceIn"
+                    data-wow-delay="0.1s"
+                  >
+                    <i class="fa fa-phone me-2"></i>Make A Call
+                  </button>
+                  <button
+                    class="btn btn-dark py-3 px-4 wow animate__animated animate__bounceIn"
+                    data-wow-delay="0.3s"
+                    style="background-color: var(--dark-blue)"
+                  >
+                    <i class="fa fa-calendar-alt me-2"></i>
+                    Get Appointment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1>Property Agents</h1>
+            <p>
+              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
+              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
+              rebum vero dolor duo.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative text-center">
+                  <img src="images/team-1.jpg" class="img-fluid" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative text-center">
+                  <img src="images/team-2.jpg" class="img-fluid" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative text-center">
+                  <img src="images/team-3.jpg" class="img-fluid" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative text-center">
+                  <img src="images/team-4.jpg" class="img-fluid" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="" class="btn btn-square mx-1"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Full Name</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow animate__animated animate__fadeInUp"
+            style="max-width: 600px"
+          >
+            <h1>Our Clients Say!</h1>
+            <p>
+              Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut
+              dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed
+              rebum vero dolor duo.
+            </p>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow animate__animated animate__fadeInUp"
+          >
+            <div
+              class="testimonial-item rounded p-3"
+              style="background-color: #effdf5 !important"
+            >
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Tempor stet labore dolor clita stet diam amet ipsum dolor duo
+                  ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet
+                  est kasd kasd erat eos
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="images/testimonial-1.jpg"
+                    class="img-fluid rounded"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Client Name</h6>
+                    <small>Proffesion</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-item rounded p-3"
+              style="background-color: #effdf5 !important"
+            >
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Tempor stet labore dolor clita stet diam amet ipsum dolor duo
+                  ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet
+                  est kasd kasd erat eos
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="images/testimonial-2.jpg"
+                    class="img-fluid rounded"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Client Name</h6>
+                    <small>Proffesion</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-item rounded p-3"
+              style="background-color: #effdf5 !important"
+            >
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Tempor stet labore dolor clita stet diam amet ipsum dolor duo
+                  ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet
+                  est kasd kasd erat eos
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="images/testimonial-3.jpg"
+                    class="img-fluid rounded"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Client Name</h6>
+                    <small>Proffesion</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-item rounded p-3"
+              style="background-color: #effdf5 !important"
+            >
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Tempor stet labore dolor clita stet diam amet ipsum dolor duo
+                  ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet
+                  est kasd kasd erat eos
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="images/testimonial-4.jpg"
+                    class="img-fluid rounded"
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Client Name</h6>
+                    <small>Proffesion</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid text-white-50 footer pt-5 mt-5 wow animate__animated animate__fadeIn"
+        data-wow-delay="0.1s"
+        style="background-color: #0e2e50"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <div>
+                <h5 class="mb-4 text-white">Get In Touch</h5>
+                <p class="mb-2">
+                  <i class="fa fa-map-marker-alt me-3"></i>
+                  123 Street, New York, USA
+                </p>
+                <p class="mb-2">
+                  <i class="fa fa-phone me-3"></i>
+                  +012 345 67890
+                </p>
+                <p class="mb-2">
+                  <i class="fa fa-envelope me-3"></i>
+                  e_mail@gmail.com
+                </p>
+                <div class="d-flex pt-2">
+                  <button class="btn btn-outline-light btn-social">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="btn btn-outline-light btn-social">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="btn btn-outline-light btn-social">
+                    <i class="fab fa-youtube"></i>
+                  </button>
+                  <button class="btn btn-outline-light btn-social">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Quick Links</h5>
+              <div class="d-flex flex-column align-items-start">
+                <a class="btn btn-link text-white-50" href="#">About Us</a>
+                <a class="btn btn-link text-white-50" href="#">Contact Us</a>
+                <a class="btn btn-link text-white-50" href="#">Our Services</a>
+                <a class="btn btn-link text-white-50" href="#"
+                  >Privacy Policy</a
+                >
+                <a class="btn btn-link text-white-50" href="#"
+                  >Terms & Conditions</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Photo Gallery</h5>
+              <div class="row g-2 pt-2">
+                <div class="col-4">
+                  <img
+                    src="images/property-1.jpg"
+                    class="img-fluid rounded bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/property-2.jpg"
+                    class="img-fluid rounded bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/property-3.jpg"
+                    class="img-fluid rounded bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/property-4.jpg"
+                    class="img-fluid rounded bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/property-5.jpg"
+                    class="img-fluid rounded bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/property-6.jpg"
+                    class="img-fluid rounded bg-light p-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Newsletter</h5>
+              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              <div
+                class="position-relative mx-auto feedback-form"
+                style="max-width: 400px"
+              >
+                <input
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white"
+                  type="text"
+                  placeholder="Your email"
+                />
+                <button
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                ©
+                <a class="border-bottom text-white" href="#">Your Site Name</a>,
+                All Rights Reserved. Designed By
+                <a
+                  class="border-bottom text-white"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  href="//htmlcodex.com"
+                  >HTML Codex</a
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="#">Home</a>
+                  <a href="#">Cookies</a>
+                  <a href="#">Help</a>
+                  <a href="#">FAQs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary text-white btn-lg-square back-to-top">
+        <i class="bi bi-arrow-up"></i>
+      </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

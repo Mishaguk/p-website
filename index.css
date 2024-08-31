@@ -1,0 +1,326 @@
+:root {
+  --dark-blue: #0e2e50;
+  --primary: #00b98e;
+  --bs-light: #effdf5;
+}
+
+body {
+  background-color: #effdf5 !important;
+}
+@keyframes FadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(
+      -50px
+    ); /* Start position, you can adjust this value */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes FadeInUp {
+  from {
+    opacity: 1;
+    transform: translateY(0px); /* Start position, you can adjust this value */
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none !important;
+  color: var(--primary) !important;
+}
+li {
+  list-style-type: none;
+}
+@keyframes frameAppear {
+  from {
+    transform: skew(0deg);
+    left: -80%;
+  }
+  to {
+    transform: skew(20deg);
+    left: -50%;
+  }
+}
+.disable-animations * {
+  animation: none !important;
+  transition: none !important;
+}
+.navbar {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+.navbar-container {
+  position: relative;
+  margin-top: 45px;
+  padding: 0 3rem !important;
+  transition: 0.5s;
+  z-index: 1020;
+}
+.navbar-container.sticky-top {
+  position: sticky;
+  padding: 0 !important;
+}
+
+.navbar-brand {
+  color: rgb(0 185 142) !important;
+}
+.icon {
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  background: #fff !important;
+  align-items: center;
+  border: 1px dashed var(--primary) !important;
+  border-radius: 50px;
+}
+.cat-item div {
+  background: #fff;
+  border: 1px dashed rgba(0, 185, 142, 0.3);
+  transition: 0.5s;
+}
+.cat-item div * {
+  transition: 0.5s;
+}
+.cat-item:hover div {
+  background-color: var(--primary);
+  border-color: transparent;
+}
+.cat-item:hover div * {
+  color: #fff !important;
+}
+.btn-primary {
+  background-color: #26c49f !important;
+  border-color: #1ac099 !important;
+}
+.btn-primary:hover {
+  background-color: #33c7a5 !important;
+  border-color: #1ac099 !important;
+}
+.nav-link:hover {
+  color: #00b98e !important;
+}
+.nav-link {
+  color: var(--dark-blue) !important ;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+}
+.dropdown-menu {
+  animation-duration: 0.5s !important;
+  animation-name: FadeInDown !important;
+}
+.header {
+  margin-top: -122.6px;
+}
+.primary-text {
+  color: var(--primary) !important;
+}
+.display-5 {
+  font-weight: 800 !important;
+}
+.header-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.owl-prev,
+.owl-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  width: 50px;
+  height: 50px;
+  margin: 7px 0;
+  font-size: 20px !important;
+  border-radius: 40px;
+  background-color: var(--primary) !important;
+  transition: 0.5s;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: var(--dark-blue) !important;
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease-in;
+}
+.fadeInUp {
+  animation: fadeInUp 0.5s ease-in;
+}
+
+.about-img::before {
+  content: "";
+  background-color: var(--primary);
+  position: absolute;
+  left: -50%;
+  top: 0;
+  transform: skew(20deg);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.about-img img {
+  position: relative;
+  z-index: 2;
+}
+.about-img.animateFrame::before {
+  animation: frameAppear 1s ease-in;
+}
+.btn-outline-primary {
+  border-color: var(--primary) !important;
+}
+.nav-pills .nav-item .btn {
+  color: var(--dark-blue) !important;
+  transition: 0.5s;
+}
+.nav-pills .nav-item a:hover,
+.nav-pills .nav-item .active {
+  background-color: var(--primary);
+  color: #fff !important;
+}
+.nav-item .active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 185, 142, 0.5);
+}
+.property-item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+.property-item img {
+  transition: 0.5s;
+}
+.property-item img:hover {
+  scale: 1.1;
+}
+.team-item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+.team-item .btn {
+  color: var(--primary);
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.team-item .btn:hover {
+  background-color: var(--primary);
+  color: #fff !important;
+}
+.btn-square {
+  border-radius: 50px !important;
+}
+.testimonial-carousel {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.testimonial-carousel .testimonial-item .border {
+  border: 1px dashed rgba(0, 185, 142, 0.3) !important;
+}
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0;
+  width: 100%;
+  top: calc(50% - 20px);
+}
+
+.footer .btn-social {
+  border-radius: 35px !important;
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 35px;
+  transition: 0.3s;
+}
+.footer .btn-social:hover {
+  color: var(--primary);
+}
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link {
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.footer .btn-link:hover {
+  letter-spacing: 1px;
+}
+.feedback-form ::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+.feedback-form input:hover,
+.feedback-form input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 185, 142, 0.5);
+}
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+}
+.back-to-top {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  right: 45px;
+  bottom: 45px;
+  font-weight: 400;
+  border-radius: 50px !important;
+  z-index: 99;
+}
+
+.dropdown-menu li a {
+  color: #000000 !important;
+}
+h1 {
+  color: var(--dark-blue) !important;
+  font-weight: 700 !important;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 992px) {
+  .navbar-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .header {
+    margin: 0;
+  }
+  .owl-nav {
+    visibility: hidden;
+  }
+}
